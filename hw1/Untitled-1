@@ -1,0 +1,44 @@
+/*
+XiaoyiLiu
+*/
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+int main(int argc, char* argv[]) {
+  /* The following input
+   *
+   *   2 1234 3 98.7 87.92 77.32 2345 3 93.1 90.23 81.21
+   *
+   * would result in the following output.
+   */
+    int max_id;
+    double max_scores;
+    int number_of_students;
+    cin >> number_of_students;
+  cout << "{" << endl;
+  cout << "  \"students\" : [" << endl;
+    for(int i=0;i<number_of_students;++i){
+        int student_id;
+        cin >>student_id;
+        cout << "    { \"id\" : " << student_id <<" \"gtrades\" : [ ";
+        for(int j=0;j<number_of_scores;++j){
+            double grades;
+            cin>> grades;
+            cout<< grades;
+            if(
+            j<number_of_scores;
+               )
+            cout<<",";
+            
+            else if(
+            j=number_of_scores;
+            )
+        }
+        }
+    j<number_of_scores;
+                }
+    cout << "  \"max_id\" : max_id"<<", " << endl;
+    cout << "  \"max_score\" : max_score" << endl;
+    cout<< "}";
